@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
 #Activar el Rewrite Engine
 RewriteEngine on
-ErrorDocument 404 https://localhost/tienda-camisetas/error/
+ErrorDocument 404 http://localhost/tienda-camisetas/error/
 
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
