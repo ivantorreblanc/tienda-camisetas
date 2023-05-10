@@ -1,0 +1,485 @@
+/* GENERALES */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+body {
+    background: url(../img/bg.png);
+}
+
+a {
+    color: #01b1ea;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #01b1ea;
+    ;
+}
+
+a:hover {
+    color: #555555;
+}
+
+.alert_green {
+    color: green;
+}
+
+.alert_red {
+    color: red;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    border: 1px solid transparent;
+    border-bottom: #ccc;
+
+}
+
+td{
+    border-top: 1px solid #ccc;
+    padding: 2px;
+}
+
+.thumb{
+    width: 150px;
+}
+
+/* CONTAINER */
+
+#container {
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px gray;
+    background: white;
+}
+
+/* HEADER */
+
+#header {
+
+    height: 145px;
+    background: #F0F0F0;
+}
+
+#logo a {
+    float: left;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: 'Open Sans', Helvetica, Arial;
+    text-transform: uppercase;
+    color: #01B1EA;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 18px;
+    margin-left: 25px;
+    text-shadow: 0px 2px 1px #222222;
+    transition: all 250ms;
+
+}
+
+#logo a:hover {
+    text-shadow: 0px 2px 1px #222222, 0px 0px 5px #01B1EA;
+}
+
+
+
+#logo {
+    float: left;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+#logo img {
+    float: left;
+    height: 100px;
+}
+
+/* MENU */
+
+#menu {
+    clear: both;
+    background: #222;
+    color: white;
+    height: 55px;
+    border-bottom: 4px solid #01B1EA;
+
+}
+
+
+
+#menu ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-left: 25px;
+}
+
+#menu ul li {
+    line-height: 55px;
+    float: left;
+    border-right: 1px solid #363636;
+}
+
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: all 250ms;
+}
+
+#menu a:first-child {
+    border-left: 1px solid #363636;
+}
+
+#menu a:hover {
+    background: #01B1EA;
+}
+
+/* CONTENT */
+
+#content {
+    margin: 0px auto;
+    overflow: hidden;
+    background: white;
+
+}
+
+/* BARRA LATERAL */
+
+#lateral {
+    width: 22%;
+    min-height: 500px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#lateral .block_aside {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+
+}
+
+
+#lateral h3 {
+    display: block;
+    color: #222;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #E1E1E1;
+    border-bottom: 2px solid #01b1ea;
+}
+
+#lateral ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lateral ul li {
+    list-style: square;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+/* FORMS */
+
+.form_container{
+    width: 50%;
+}
+
+
+label,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select, textarea {
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select, textarea  {
+    border: 1px solid #C9C9C9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: white;
+    padding: 2px;
+    color: gray;
+    transition: all 250ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border: 1px solid #1579B5;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+button,
+.disabled-button,
+.button {
+    display: block;
+    border-radius: 2px;
+    width: auto;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background: #2979CD;
+    border: 1px solid #11608E;
+    cursor: pointer;
+}
+
+.button {
+    background: #33AE3D;
+    color: white !important;
+    text-decoration: none;
+}
+
+.disabled-button {
+    background: #5D5D5D;
+    text-align: center;
+    color: white !important;
+    text-decoration: none;
+}
+
+
+.button-small{
+    width: 130px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-gestion{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-red{
+    background: #d34040;
+    border: 1px solid #770707;
+}
+
+label,
+input[type="button"],
+input[type="submit"],
+button {
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* CENTRAL */
+
+#central {
+    width: 72%;
+    min-height: 500px;
+    float: right;
+    border-left: 1px solid #ccc;
+    box-shadow: -5px -1px 5px #ddd;
+    padding: 25px;
+}
+
+#central h1 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 0px;
+
+}
+
+
+/* PRODUCTOS */
+
+.product {
+    display: block;
+    width: 30%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+
+}
+
+
+.product img {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.img_carrito{
+    height: 80px;
+    display: block;
+    margin: 10px auto;
+
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product a {
+    color: black;
+    text-decoration: none;
+}
+.product a:hover {
+    color: #555;
+    text-decoration: none;
+}
+
+#detail-product{
+    width: 100%;
+}
+
+#detail-product .image{
+    display: block;
+    width: 40%;
+    float: left;
+    margin-right: 40px;
+}
+
+#detail-product img{
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+#detail-product .data{
+    width: 50%;
+    float: right;
+}
+
+#detail-product .description{
+    margin-bottom: 20px;
+}
+
+#detail-product .price{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #444;
+}
+
+
+#detail-product .button{
+    width: 200px;
+    text-align: center;
+}
+
+
+
+/* FOOTER */
+
+#footer {
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222222;
+    border-top: 5px solid #01B1EA;
+
+}
+
+
+/* CARRITO */
+#carrito-buttons{
+    text-align: center;
+    width: 15%;
+}
+
+#carrito-buttons a{
+    display: block;
+    float: left;
+    padding: 3px;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#carrito-buttons .button-add{
+    background-color: #01B1EA;
+}
+
+#carrito-buttons .button-subtract{
+    background-color: #d34040;;
+}
+
+#carrito-buttons .button-delete{
+    background-color: #737373;
+}
+
+.delete-carrito{
+    width: 135px;
+    float: left;
+}
+
+.button-delete{
+    display: block;
+    float: left;
+    width: 110px;
+}
+
+.total-carrito{
+    width: 410px;
+    float: right;
+
+}
+
+.total-carrito h3{
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+
+
+.button-pedido{
+    display: block;
+    float: right;
+    width: 110px;
+}
+
+
+
+
+
